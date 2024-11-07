@@ -16,6 +16,8 @@
 .habit-change,
 .run-section,
 .team-section,
+.price-section,
+.calculation,
 .footers {
     max-width: 1080px;
     margin: 0 auto;
@@ -96,7 +98,7 @@ body {
 /*banner styles*/
 .banner {
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -106,6 +108,7 @@ body {
     color: rgb(255, 255, 255);
     margin-bottom: 28px;
     line-height: 1.1em;
+    margin-top: 10px;
 }
 
 .new-font {
@@ -171,8 +174,9 @@ body {
 }
 
 #button2-div {
-    border: 2px solid red;
     margin-left: 220px;
+    position: relative;
+    margin-bottom: -220px;
 }
 
 #badge1 {
@@ -229,8 +233,8 @@ body {
 
 .run {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 165px;
     background-color: rgb(34, 34, 34);
     border-radius: 18px;
     padding: 30px;
@@ -258,6 +262,169 @@ body {
     border-radius: 18px;
     margin-top: 10px;
 }
+
+/*extra price-section styles*/
+.price-text {
+    text-align: center;
+}
+
+.price-text hr {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    max-width: 80px;
+    border: 1px solid salmon;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.card h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+.highlight {
+    color: lightsalmon;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 50px;
+    margin-bottom: 40px;
+}
+
+.card hr {
+    text-align: center;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+/*bmi-section styles*/
+.bmi-section {
+    background-color: rgb(34, 34, 34);
+
+}
+
+.bmi-upper-part {
+    background-color: black;
+}
+
+.bmi-text {
+    text-align: left;
+    max-width: 670px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.calculation {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*BMI table styles*/
+.calc-chart h4,
+.calc-text h4 {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.table-head {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+/*BMI form styles*/
+.bmi-form {
+    max-width: 570px;
+}
+
+.background {
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-part1,
+.input-part2 {
+    display: flex;
+}
+
+#input1,
+#input2 {
+    width: 50%;
+}
+
+#input3 {
+    width: 45.5%;
+}
+
+#input4 {
+    width: 49.3%;
+}
+
+select,
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#input1,
+#input3 {
+    margin-right: 9px;
+}
+
+
+
+.bmi-form>.btn1 {
+    margin-top: 30px;
+}
+
+/*.bmi-form {
+    border: 2px solid green;
+    width: 100%;
+    max-width: 570px;
+}
+
+#input5 {
+    grid-column: span 2;
+}*/
 
 /*team section styles*/
 .team-text {
